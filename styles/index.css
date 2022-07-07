@@ -15,15 +15,15 @@
 }
 
 body {
-    background-color: var(--darkgrey);
+    background-color: var(--black);
 }
 
 .general-container {
     margin: 0 auto;
-    width: 95%;
+    width: 100%;
     max-width: 1400px;
     display: flex;
-    flex-direction: column;
+    flex-direction: column;    ;
 }
 
 /* Inicio Header */
@@ -93,8 +93,129 @@ nav ul li a:hover {
 
 /* Fin Hero */
 
-/* Inicio Works */
+/* Inicio Cursos */
+
+.cursos{
+    background-color: var(--black);
+    color: var(--white);
+    padding: 20px 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.cursos-header{
+    background-color: var(--darkgrey);
+    height: auto;
+    width: 70%;
+    padding: 15px 10px 15px 10px;
+    text-align: center;
+    border-radius: 15px;
+}
+
+.cursos-container{
+    padding-top: 15px;
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    -webkit-perspective: 800;
+    perspective: 800;
+}
+
+.polaroid{
+    margin: 10px;
+    padding: 10px;
+    background-color: var(--white);
+    color: var(--black);
+    width: 270px;
+    height: 320px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    transform-style: preserve-3d;
+    box-shadow: 0px 10px 15px -5px var(--aquamarine);
+}
+
+.polaroid-frente, .polaroid-dorso {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 7px;
+    right: 0;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+.polaroid-frente {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.polaroid-frente h3 {
+    align-items: center;
+    justify-content: center;
+    min-height: 60px;
+    max-width: 250px;
+}
+
+.polaroid-frente img{
+    width: 250px;
+    height: 250px;
+    border: 1px solid black;
+}
+
+.polaroid-dorso {
+    transform: rotateY(180deg);
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+/* ANIMACIÓN */
+@-webkit-keyframes giro-polaroid {
+    0% {
+      -webkit-transform: rotateY(0);
+              transform: rotateY(0);
+    }
+    100% {
+      -webkit-transform: rotateY(180deg);
+              transform: rotateY(180deg);
+    }
+  }
+  @keyframes giro-polaroid {
+    0% {
+      -webkit-transform: rotateY(0);
+              transform: rotateY(0);
+    }
+    100% {
+      -webkit-transform: rotateY(180deg);
+              transform: rotateY(180deg);
+    }
+  }
+/* ANIMACIÓN */
+
+.polaroid:hover {
+    -webkit-animation: giro-polaroid 0.7s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
+	animation: giro-polaroid 0.7s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
+}
 
 
 
-/* Fin Works */
+/* Fin Cursos */
+
+.comunidad {
+    height: 80vh;
+    width: 100%;
+    background-color: var(--darkgrey);
+}
