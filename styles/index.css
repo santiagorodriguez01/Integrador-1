@@ -210,8 +210,6 @@ nav ul li a:hover {
 	animation: giro-polaroid 0.7s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
 }
 
-
-
 /* Fin Cursos */
 
 /* Inicio Comunidad  */
@@ -265,6 +263,7 @@ nav ul li a:hover {
     height: auto;
     width: 100%;
 }
+
 /* Fin Comunidad */
 
 /* Inicio Contacto */
@@ -274,6 +273,41 @@ nav ul li a:hover {
     height: 80vh;
     width: 100%;
     background-color: var(--darkgrey);
+
+}
+
+.contacto-container{
+
+}
+
+.contacto-info {
+
+}
+
+.container-info{
+
+}
+
+.info-oficina {
+
+}
+
+.info-representante {
+
+}
+
+.redes-sociales {
+
+}
+
+.edificio {
+    
 }
 
 /* Fin Contacto */
+
+/* Inicio Footer */
+
+
+
+/* Fin Footer */
