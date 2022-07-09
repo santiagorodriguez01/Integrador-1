@@ -214,8 +214,66 @@ nav ul li a:hover {
 
 /* Fin Cursos */
 
+/* Inicio Comunidad  */
+
 .comunidad {
+    height: 60vh;
+    width: 100%;
+    color: var(--white);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.comunidad-container {
+    height: 100%;
+    width: 95%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.comunidad-texto {
+    background-color: var(--darkgrey);
+    height: 100%;
+    width: 50%;
+    padding: 15px;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+}
+
+.comunidad-img {
+    width: 50%;
+    height: 100%;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+
+    background-image: url(images/comunidad-4x4.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.comunidad-img img {
+    height: auto;
+    width: 100%;
+}
+/* Fin Comunidad */
+
+/* Inicio Contacto */
+
+.contacto {
+    margin: 20px auto;
     height: 80vh;
     width: 100%;
     background-color: var(--darkgrey);
 }
+
+/* Fin Contacto */
