@@ -14,13 +14,18 @@
     --white: #FFFAFB;
 }
 
+section[id] {
+    scroll-margin-top: 120px;
+}
+
 body {
-    background-color: var(--darkgrey);
+    background-color: var(--black);
+    font-family: 'Oswald', sans-serif;
 }
 
 .general-container {
     margin: 0 auto;
-    width: 95%;
+    width: 100%;
     max-width: 1400px;
     display: flex;
     flex-direction: column;
@@ -30,6 +35,7 @@ body {
 
 header {
     background-color: var(--black);
+    height: 120px;
     padding: 0 20px;
     width: 100%;
     display: flex;
@@ -46,8 +52,10 @@ header {
 }
 
 nav ul {
+    height: 100%;
     display: flex;
     justify-content: space-between;
+    align-items: center;
     gap: 20px 20px;
     flex-wrap: wrap;
 }
@@ -57,7 +65,7 @@ nav ul li a {
     color: var(--white);
     border: 2px solid var(--white);
     border-radius: 50px;
-    font-size: 20px;
+    font-size: 16px;
 }
 
 nav ul li a:hover {
