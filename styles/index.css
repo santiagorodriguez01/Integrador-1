@@ -453,6 +453,15 @@ nav ul li a:hover {
 
 /* MEDIA QUERIES */
 
+@media screen and (max-width: 410px) {
+    .hero {
+        background-image: url(images/background-hero-10x8-ver.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+}
+
 @media screen and (max-width: 510px) {
 
     .contacto-info {
@@ -498,4 +507,24 @@ nav ul li a:hover {
         height: 40px;
     }
 
+}
+
+@media screen and (max-width: 700px) {
+        
+    .comunidad-img {
+        display: none;
+    }
+
+    .comunidad-container {
+        background-image: url(images/comunidad.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    
+    .comunidad-texto {
+        width: 100%;
+        border-radius: 30px;
+        background-color: rgba(54, 53, 53, 0.363);
+    }
 }
