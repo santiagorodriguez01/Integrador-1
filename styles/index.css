@@ -14,6 +14,10 @@
     --white: #FFFAFB;
 }
 
+section[id] {
+    scroll-margin-top: 120px;
+}
+
 body {
     background-color: var(--black);
     font-family: 'Oswald', sans-serif;
@@ -48,8 +52,10 @@ header {
 }
 
 nav ul {
+    height: 100%;
     display: flex;
     justify-content: space-between;
+    align-items: center;
     gap: 20px 20px;
     flex-wrap: wrap;
 }
@@ -59,7 +65,7 @@ nav ul li a {
     color: var(--white);
     border: 2px solid var(--white);
     border-radius: 50px;
-    font-size: 20px;
+    font-size: 16px;
 }
 
 nav ul li a:hover {
@@ -71,6 +77,11 @@ nav ul li a:hover {
 }
 
 /* Fin Header */
+
+main {
+    position: relative;
+    top: 100;
+}
 
 /* Inicio Hero */
 
@@ -179,7 +190,7 @@ nav ul li a:hover {
     padding: 15px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
 
 }
@@ -271,6 +282,53 @@ nav ul li a:hover {
 
 /* Fin Comunidad */
 
+
+/* Inicio Galeria */
+
+.galeria {
+    /* background-color: var(--darkgrey); */
+    width: 100%;
+    height: auto;
+    padding: 20px 0;
+}
+
+.galeria-container {
+    width: 100%;    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    gap: 20px 10px;
+}
+
+.galeria-texto {
+    color: var(--white);
+    padding: 0 10px;
+}
+
+.galeria-fotos {
+    width: 100%;
+    display: flex;
+    padding: 0 20px;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px 20px;
+}
+
+.galeria-fotos img {
+    height: 100%;
+    max-height: 600px;
+    width: auto;
+    max-width: 100%;
+    border-radius: 30px;
+    box-shadow: 1px 1px 10px var(--mint);
+}
+
+/* Fin Galeria */
+
 /* Inicio Contacto */
 
 .contacto {
@@ -296,7 +354,7 @@ nav ul li a:hover {
     justify-content: space-around;
     text-align: justify;
     flex-wrap: wrap;
-    gap: 20px 10px;
+    gap: 30px 10px;
 }
 
 .contacto-info {
@@ -313,12 +371,11 @@ nav ul li a:hover {
 }
 
 .container-info{
-    /* max-width: 600px; */
     display: flex;
     flex-direction: row;
     justify-content:space-between;
     flex-wrap: wrap;
-    gap: 50px 20px;
+    gap: 50px 30px;
     padding-bottom: 20px;
 }
 
@@ -369,7 +426,21 @@ nav ul li a:hover {
 /* Fin Contacto */
 
 /* Inicio Footer */
+.footer {
+    height: 100px;
+    width: 100%;
+    padding: 20px 0;
+    color: var(--white);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 
+}
 
+.logo-footer {
+    height: 40px;
+}
 
 /* Fin Footer */
