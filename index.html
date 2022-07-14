@@ -23,6 +23,9 @@
     <meta name="theme-color" content="#ffffff">
     <link rel="stylesheet" href="styles/index.css"/>
     <title>Photo Academy</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class="general-container">   
@@ -44,8 +47,8 @@
         <main>
             <section id="hero" class="hero">
                 <div class="hero-container">
-                    <h1>NOMBRE DE MARCA</h1>
-                    <h4>Slogan Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum, autem.</h4>
+                    <h1>PHOTO ACADEMY</h1>
+                    <h4>¡Que lo unico con lo que apuntes sea una camara!</h4>
                 </div>
             </section>
             <section id="cursos" class="cursos">
@@ -60,8 +63,8 @@
                             <h3>Fotografía Profesional</h3>
                         </div>
                         <div class="polaroid-dorso">
-                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quia saepe ut corporis vitae deleniti ab natus laudantium, alias impedit laborum sint molestiae, facilis vel tenetur omnis, fuga illo soluta unde.</p>
-                            <a href="#">Ver más</a>
+                            <p>En este curso descubrirás cómo tomar fotografías de alta calidad que transmitan tu visión del mundo. Aprenderás a dominar las funciones de tu cámara conociendo los conceptos de la fotografía y desarrollando tus habilidades para capturar la imagen perfecta.</p>
+                            <a class="polaroid-boton" href="#">Ver más</a>
                         </div>
                     </div>
                     <div class="polaroid">
@@ -70,9 +73,9 @@
                             <h3>Fotografía con Smartphones</h3>
                         </div>
                         <div class="polaroid-dorso">
-                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quia saepe ut corporis vitae deleniti ab natus laudantium, alias impedit laborum sint molestiae, facilis vel tenetur omnis, fuga illo soluta unde.</p>
+                            <p>Descubre los principios de composición, iluminación y retoque en fotografía y aprende a tomar imágenes impactantes usando tan solo tu teléfono. En este curso online, aprenderás cómo utilizar tu smartphone para capturar imágenes atractivas y de calidad.</p>
 
-                            <a href="#">Ver más</a>
+                            <a class="polaroid-boton" href="#">Ver más</a>
                         </div>
                     </div>
                     <div class="polaroid">
@@ -81,8 +84,8 @@
                             <h3>Fotografía con Drones</h3>
                         </div>
                         <div class="polaroid-dorso">
-                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quia saepe ut corporis vitae deleniti ab natus laudantium, alias impedit laborum sint molestiae, facilis vel tenetur omnis, fuga illo soluta unde.</p>
-                            <a href="#">Ver más</a>
+                            <p>El uso de drones para fotografía y vídeo, ha cambiado completamente la perspectiva de la industria, en sentido literal y figurado, por lo que, en este curso, te compartiremos el proceso para realizar fotografía fija y vídeo desde las alturas.</p>
+                            <a class="polaroid-boton" href="#">Ver más</a>
                         </div>          
                     </div>
                     <div class="polaroid">
@@ -91,8 +94,8 @@
                             <h3>Edición de Fotos</h3>                            
                         </div> 
                         <div class="polaroid-dorso">
-                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quia saepe ut corporis vitae deleniti ab natus laudantium, alias impedit laborum sint molestiae, facilis vel tenetur omnis, fuga illo soluta unde.</p>
-                            <a href="#">Ver más</a>
+                            <p>Consigue un dominio total de las acciones más útiles y potentes del software Adobe Photoshop, el mejor programa para la edición fotográfica profesional. Aprende a sacar todo el potencial a tus imágenes como nunca antes.</p>
+                            <a class="polaroid-boton" href="#">Ver más</a>
                         </div>        
                     </div>
                 </div>
@@ -102,7 +105,7 @@
                     <div class="comunidad-texto">
                         <h2>Sumate a nuestra comunidad!</h2>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi dolor aut incidunt, soluta, cum expedita repudiandae quod in voluptatibus provident quam itaque. Sapiente inventore magni sint ducimus laborum magnam nisi earum officiis assumenda hic? Minima molestias, distinctio perferendis repudiandae impedit iure animi odit, quaerat quo iste assumenda autem. Aliquid, maiores.</p>
-                        <a href="#">Unite</a>
+                        <a class="comunidad-boton" href="#">Unite</a>
                     </div>
                     <div class="comunidad-img">
                     </div>
@@ -114,10 +117,10 @@
                         <h2>Estos son algunos de los trabajos de nuestros alumnos</h2>
                     </div>
                     <div class="galeria-fotos">
-                        <img src="styles/images/modelo.jpg" alt=""/>
-                        <img src="styles/images/amigos.jpg" alt=""/>
-                        <img src="styles/images/auto-juguete.jpg" alt=""/>
-                        <img src="styles/images/perro.jpg" alt=""/>
+                        <img class="foto-vertical" src="styles/images/modelo.jpg" alt="Foto modelo"/>
+                        <img class="foto-horizontal" src="styles/images/amigos.jpg" alt="Foto amigos en picnic"/>
+                        <img class="foto-horizontal" src="styles/images/auto-juguete.jpg" alt="Foto auto de juguete"/>
+                        <img class="foto-vertical" src="styles/images/perro.jpg" alt="Foto perro"/>
                     </div>
                 </div>
             </section>
@@ -156,9 +159,11 @@
             </section>
         </main>
         <footer>
-            <div class="footer">               
+            <div class="footer-container">
                 <img src="styles/images/logo-footer.png" alt="logo" class="logo-footer">
-                <h2>Copyright - Santiago Rodriguez</h2>
+                <div class="footer-texto">
+                    <h2>Copyright - Santiago Rodriguez</h2>
+                </div>
             </div>            
         </footer>   
     </div>
