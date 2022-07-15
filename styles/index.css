@@ -22,6 +22,10 @@ body {
     background-color: var(--black);
 }
 
+h2 {
+    font-size: 35px;
+}
+
 .general-container {
     margin: 0 auto;
     width: 100%;
@@ -71,8 +75,8 @@ nav ul {
 
 nav ul li a {
     color: var(--white);
-    font-size: 16px;
-
+    font-size: 18px;
+    font-weight: 500;
 }
 
 nav ul li a:hover {
@@ -98,16 +102,42 @@ nav ul li a:hover {
 }
 
 .hero-container {
-    background-color: #131515bd;
     width: 80%;
+    height: 80%;
     padding: 20px;
+    color: var(--white);
+    text-shadow: 0px 0px 25px var(--black);
+
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     text-align: center;
-    gap: 50px 10px;
-    color: var(--white);
+}
+
+.hero-marca {
+    border-radius: 20px;
+    padding: 0 10px;
+    font-family: 'Squada One', sans-serif;
+    font-size: 80px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-wrap: wrap;
+    gap: 0px 30px;
+}
+
+.hero-slogan {
+    border-radius: 10px;
+    padding: 0 10px;
+    font-size: 24px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 /* Fin Hero */
@@ -137,6 +167,16 @@ nav ul li a:hover {
     justify-content: space-between;
     align-items: center;
     gap: 20px;
+}
+
+.cursos-header>h2 {
+    font-size: 28px;
+}
+
+.cursos-header>p {
+    font-size: 18px;
+    font-weight: 500;
+    padding: 5px;
 }
 
 .cursos-container{
@@ -207,7 +247,12 @@ nav ul li a:hover {
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
+}
 
+.polaroid-dorso>p {
+    font-size: 16px;
+    font-weight: 500;
+    width: 90%;
 }
 
 /* ANIMACIÓN */
@@ -257,7 +302,8 @@ nav ul li a:hover {
 /* Inicio Comunidad  */
 
 .comunidad {
-    height: 70vh;
+    height: auto;
+    min-height: 70vh;
     width: 100%;
     color: var(--white);
     padding: 20px 5px;
@@ -280,8 +326,9 @@ nav ul li a:hover {
 .comunidad-texto {
     background-color: var(--darkgrey);
     height: 100%;
+    min-height: 70vh;
     width: 50%;
-    padding: 15px;
+    padding: 10px;
     border-top-left-radius: 30px;
     border-bottom-left-radius: 30px;
 
@@ -292,9 +339,31 @@ nav ul li a:hover {
     text-align: center;
 }
 
+.comunidad-texto-discord {
+    width: 80%;
+    font-size: 18px;
+    font-weight: 500;
+    text-shadow: 1px 1px 1px var(--black);
+    padding: 5px 0;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+    margin: 10px 0;
+}
+
+.comunidad-texto-discord>h3 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 22px;
+    text-transform: uppercase;
+}
+
 .comunidad-img {
     width: 50%;
     height: 100%;
+    min-height: 70vh;
     border-top-right-radius: 30px;
     border-bottom-right-radius: 30px;
 
@@ -315,10 +384,13 @@ nav ul li a:hover {
     border: 2px solid var(--aquamarine);
     border-radius: 30px;
     padding: 10px 50px;
-    font-size: 20px;
+    font-family: 'Squada One', sans-serif;
+    font-size: 28px;
     font-weight: 500;
     text-align: center;
     cursor: pointer;
+    margin: 10px 0;
+    text-transform: uppercase;
 }
 
 .comunidad-boton:hover {
@@ -355,7 +427,7 @@ nav ul li a:hover {
 
 .galeria-texto {
     color: var(--white);
-    padding: 0 10px;
+    padding: 10px;
 }
 
 .galeria-fotos {
@@ -435,6 +507,11 @@ nav ul li a:hover {
     font-size: 25px;
 }
 
+.container-info p {
+    font-size: 18px;
+    font-weight: 500;
+}
+
 .info-oficina {
     display: flex;
     flex-direction: column;
@@ -511,12 +588,38 @@ footer{
     height: 40px;
 }
 
+.footer-texto>h2 {
+    font-size: 25px;
+}
+
 /* Fin Footer */
 
 
 /* MEDIA QUERIES */
 
+@media screen and (max-width: 400px) {
 
+    .hero-container {
+        width: 100%;
+        height: 100%;
+        padding: 0 5px;
+    
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    .hero-marca {
+        font-size: 46px;
+        padding: 0;
+    }
+    
+    .hero-slogan {
+        font-size: 16px;
+        padding: 0;
+    }
+
+}
 
 @media screen and (max-width: 510px) {
 
@@ -561,6 +664,35 @@ footer{
 
     .redes-sociales img {
         height: 40px;
+    }
+
+}
+
+@media screen and (min-width: 400px) and (max-width: 550px) {
+
+    .hero-container {
+        width: 100%;
+        height: 100%;
+        padding: 0 10px;
+    
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    
+    .hero-marca {
+        font-size: 60px;
+        padding: 0 10px;
+    
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .hero-slogan {
+        font-size: 20px;
+        padding: 0;
     }
 
 }
