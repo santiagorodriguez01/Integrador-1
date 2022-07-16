@@ -28,152 +28,249 @@
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&family=Permanent+Marker&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Squada+One&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="general-container">   
+
+    <div class="general-container">
+
+    <!-- HEADER -->
         <header>
-            <div class="logo">
-                <a href="#hero"><img src="styles/images/logo.png" alt="logo"></a>
-            </div>   
-            <nav>
-                <ul>
-                    <li><a href="#hero">Inicio</a></li>
-                    <li><a href="#cursos">Cursos</a></li>
-                    <li><a href="#comunidad">Comunidad</a></li>
-                    <li><a href="#galeria">Galería</a></li>
-                    <li><a href="#contacto">Contacto</a></li>
-                    <li><a href="login.html">Login</a></li> 
-                </ul>
-            </nav>
+            <div class="header-container">  
+
+                <div class="logo">
+                    <a href="#hero"><img src="styles/images/logo.png" alt="logo"></a>
+                </div>
+
+                <label for="menu" class="nav-label">
+                    <img src="styles/images/icons/menu-icon.png" alt="Icono de Menú">
+                </label>
+                
+
+                <nav>
+                    <div class="nav-container">
+
+                        <div class="nav-menu">
+                            <a href="#hero">Inicio</a>
+                            <a href="#cursos">Cursos</a>
+                            <a href="#comunidad">Comunidad</a>
+                            <a href="#galeria">Galería</a>
+                            <a href="#contacto">Contacto</a>
+                        </div>
+
+                        <div class="nav-login">
+                            <a href="login.html">Login</a>
+                            <a href="register-form.html">Registrate</a>
+                        </div>
+
+                    </div>
+                </nav>
+
+            </div>
         </header>
+
         <main>
+
+        <!-- HERO -->
             <section id="hero" class="hero">
+
                 <div class="hero-container">
+
                     <div class="hero-marca">
                         <h1>PHOTO</h1>
                         <h1>ACADEMY</h1>
                     </div>
+
                     <div class="hero-slogan">
                         <h2>¡Que lo único con lo que apuntes sea una cámara!</h2>
                     </div>
+
                 </div>
+
             </section>
+        
+        <!-- CURSPS -->
             <section id="cursos" class="cursos">
+
                 <div class="cursos-header">
                     <h2>Nuestros Cursos</h2>
                     <p>Te brindamos todas los conocimientos para que puedas iniciar en la fotografía.</p>
                 </div>
+
                 <div class="cursos-container">
+                    <!-- POLAROID -->
                     <div class="polaroid">
+
                         <div class="polaroid-frente">
                             <img src="styles/images/camara-tripode2-4x4.jpg" alt=""/>
                             <h3>Fotografía Profesional</h3>
                         </div>
+
                         <div class="polaroid-dorso">
                             <p>En este curso descubrirás cómo tomar fotografías de alta calidad que transmitan tu visión del mundo. Aprenderás a dominar las funciones de tu cámara conociendo los conceptos de la fotografía y desarrollando tus habilidades para capturar la imagen perfecta.</p>
                             <a class="polaroid-boton" href="#">Ver más</a>
                         </div>
+
                     </div>
+                    <!-- POLAROID -->
                     <div class="polaroid">
+
                         <div class="polaroid-frente">
                             <img src="styles/images/smartphone-comida2-4x4.jpg" alt=""/>
                             <h3>Fotografía con Smartphones</h3>
                         </div>
+
                         <div class="polaroid-dorso">
                             <p>Descubre los principios de composición, iluminación y retoque en fotografía y aprende a tomar imágenes impactantes usando tan solo tu teléfono. En este curso online, aprenderás cómo utilizar tu smartphone para capturar imágenes atractivas y de calidad.</p>
-
                             <a class="polaroid-boton" href="#">Ver más</a>
                         </div>
+
                     </div>
+                    <!-- POLAROID -->
                     <div class="polaroid">
+
                         <div class="polaroid-frente">
                             <img src="styles/images/drone1-4x4.jpg" alt=""/>
                             <h3>Fotografía con Drones</h3>
                         </div>
+
                         <div class="polaroid-dorso">
                             <p>El uso de drones para fotografía y vídeo, ha cambiado completamente la perspectiva de la industria, en sentido literal y figurado, por lo que, en este curso, te compartiremos el proceso para realizar fotografía fija y vídeo desde las alturas.</p>
                             <a class="polaroid-boton" href="#">Ver más</a>
-                        </div>          
+                        </div>
+
                     </div>
+                    <!-- POLAROID -->
                     <div class="polaroid">
+
                         <div class="polaroid-frente">
                             <img src="styles/images/edicion1-4x4.jpg" alt=""/>
                             <h3>Edición de Fotos</h3>                            
                         </div> 
+
                         <div class="polaroid-dorso">
                             <p>Consigue un dominio total de las acciones más útiles y potentes del software Adobe Photoshop, el mejor programa para la edición fotográfica profesional. Aprende a sacar todo el potencial a tus imágenes como nunca antes.</p>
                             <a class="polaroid-boton" href="#">Ver más</a>
-                        </div>        
+                        </div>
+
                     </div>
+
                 </div>
+
             </section>
+
+            <!-- COMUNIDAD -->
             <section id="comunidad" class="comunidad">
+
                 <div class="comunidad-container">
+
                     <div class="comunidad-texto">
                         <h2>¡Sumate a nuestra comunidad!</h2>
+
                         <div class="comunidad-texto-discord">
                             <h3>¡Estamos en Discord!</h3>
                             <p>Todos los miembros de nuestra comunidad de Discord tienen acceso a nuestras conferencias, tutoriales y guías. Nos comunicamos, hacemos preguntas, compartimos experiencias y organizamos reuniones a través de la aplicación. ¡al unirte a nuestro grupo, también tendrás acceso a participar en todas nuestras futuras oportunidades de expositivas!</p>
                         </div>
+
                         <a class="comunidad-boton" href="#">¡Unite!</a>
                     </div>
-                    <div class="comunidad-img">
-                    </div>
+
+                    <div class="comunidad-img"></div>
+
                 </div>
+
             </section>
+
+            <!-- GALERÍA -->
             <section id="galeria" class="galeria">
+
                 <div class="galeria-container">
+
                     <div class="galeria-texto">
                         <h2>Estos son algunos de los trabajos de nuestros alumnos</h2>
                     </div>
+
                     <div class="galeria-fotos">
                         <img class="foto-vertical" src="styles/images/modelo.jpg" alt="Foto modelo"/>
                         <img class="foto-horizontal" src="styles/images/amigos.jpg" alt="Foto amigos en picnic"/>
                         <img class="foto-horizontal" src="styles/images/auto-juguete.jpg" alt="Foto auto de juguete"/>
                         <img class="foto-vertical" src="styles/images/perro.jpg" alt="Foto perro"/>
                     </div>
+
                 </div>
+
             </section>
+
+            <!-- CONTACTO -->
             <section id="contacto" class="contacto">
-                <div class="contacto-container">
+
+                <div class="contacto-container"
+                >
                     <div class="contacto-info">
                         <h2>Contáctanos</h2>
+
                         <div class="container-info">
+
                             <div class="info-oficina">
                                 <h3>Ciudad. Prov. Pais.</h3>
+
                                 <div class="contacto-items">
                                     <p><img src="styles/images/icons/ubication-icon.png" alt="ubicación" class="icon-contacto"> Calle Falsa 123</p>
                                     <p><img src="styles/images/icons/mail-icon.png" alt="mail" class="icon-contacto"> mimail@mail.com</p>
                                     <p><img src="styles/images/icons/phone-icon.png" alt="telefono" class="icon-contacto"> Tel: +54-1112121212</p>
                                 </div>
+
                             </div>
+
                             <div class="info-representante">
                                 <h3>Santiago Rodriguez</h3>
+
                                 <div class="contacto-items">
                                     <p><img src="styles/images/icons/ubication-icon.png" alt="ubicación" class="icon-contacto"> Calle Falsa 123</p>
                                     <p><img src="styles/images/icons/mail-icon.png" alt="mail" class="icon-contacto"> mimail@mail.com</p>
                                     <p><img src="styles/images/icons/phone-icon.png" alt="telefono" class="icon-contacto"> Tel: +54-1112121212</p>
                                 </div>
+
                             </div>
+
                         </div>
+
                         <div class="redes-sociales">
-                            <div class="redes-boton"><img src="styles/images/icons/facebook-icon.png" alt="facebook" class="facebook"></div>
-                            <div class="redes-boton"><img src="styles/images/icons/twitter-icon.png" alt="twitter" class="twitter"></div>
-                            <div class="redes-boton"><img src="styles/images/icons/instagram-icon.png" alt="instagram" class="instagram"></div>
+
+                            <div class="redes-boton">
+                                <img src="styles/images/icons/facebook-icon.png" alt="facebook" class="facebook">
+                            </div>
+
+                            <div class="redes-boton">
+                                <img src="styles/images/icons/twitter-icon.png" alt="twitter" class="twitter">
+                            </div>
+
+                            <div class="redes-boton">
+                                <img src="styles/images/icons/instagram-icon.png" alt="instagram" class="instagram">
+                            </div>
+
                         </div>
+
                     </div>
+
                     <div class="edificio">
                         <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d10169.174101004153!2d-73.99181925331466!3d40.733125677548045!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x21c35f83c2666600!2sInstituto%20de%20Fotograf%C3%ADa%20de%20Nueva%20York!5e0!3m2!1ses-419!2sar!4v1657579080950!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                     </div>
+
                 </div>
+
             </section>
         </main>
+        <!-- FOOTER -->
         <footer>
             <div class="footer-container">
                 <img src="styles/images/logo-footer.png" alt="logo" class="logo-footer">
+
                 <div class="footer-texto">
                     <h2>Copyright - Santiago Rodriguez</h2>
                 </div>
-            </div>            
-        </footer>   
+
+            </div>
+        </footer>
+
     </div>
+
 </body>
 </html>
