@@ -22,10 +22,6 @@ body {
     background-color: var(--black);
 }
 
-h2 {
-    font-size: 35px;
-}
-
 .general-container {
     margin: 0 auto;
     width: 100%;
@@ -40,6 +36,10 @@ h2 {
     font-family: 'Oswald', sans-serif;
 }
 
+.general-container h2 {
+    font-size: 35px;
+}
+
 .general-container p, a {
     font-family: 'Roboto', sans-serif;
 }
@@ -52,39 +52,75 @@ header{
 
 .header-container {
     background-color: var(--black);
-    height: 120px;
-    padding: 0 20px;
+    padding: 0 10px;
     width: 100%;
+
     display: flex;
     justify-content: space-between;
     align-items: center;
+    gap: 10px;
+
     position: sticky;
     z-index: 999;
     top: 0;
 }
 
 .logo img {
-    width: 100%;
     height: auto;
+    width: auto;
+    max-width: 100%;
 }
 
 .nav-container {
     height: 100%;
+
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 10px;
+    gap: 30px;
 }
 
-.nav-container a {
+.nav-label, .nav-input {
+    display: none;
+}
+
+.nav-item {
     color: var(--white);
     font-size: 20px;
-    font-weight: 500;
+    font-weight: 800;
+    padding-right: 5px;
+    --clippy: polygon(0 0, 0 0, 0 100%, 0 100%);
+
+    display: inline-block;
+    position: relative;
+    overflow: hidden;
+    background: linear-gradient(to right, #339989, #339989 50%, #FFFAFB 50%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 200% 100%;
+    background-position: 100%;
+    transition: background-position 0.34s ease;
+
 }
 
-.nav-container a:hover {
-    text-decoration: 3px solid var(--white);
-    transition: 0.6s;
+.nav-item::after{
+    content: "";
+    display: block;
+    background-color: var(--aquamarine);
+    color: var(--aquamarine);
+    width: 90%;
+    height: 3px;
+    margin-top: 3px;
+    clip-path: var(--clippy);
+    transition: clip-path 0.3s;
+}
+
+.nav-item:hover {
+    background-position: 0 100%;
+    color: var(--aquamarine);
+    transition: 0.3s;
+    --clippy: polygon(0 0, 100% 0, 100% 100%, 0 100%);
 }
 
 .nav-menu {
@@ -101,6 +137,10 @@ header{
     justify-content: space-between;
     align-items: center;
     gap: 10px;
+}
+
+.register {
+    display: none;
 }
 
 /* Fin Header */
@@ -722,15 +762,66 @@ footer{
 }
 
 @media screen and (max-width: 630px) {
+
     .hero {
         background-image: url(images/background-hero-10x8-ver.jpg);
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
     }
+
 }
 
 @media screen and (max-width: 800px) {
+
+    .header-container {
+        gap: 0;
+    }
+
+    .logo img {
+        max-width: 75%;
+    }
+
+    .nav-container {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .nav-label {
+        display: block;
+        cursor: pointer;
+    }
+
+    .nav-menu, .nav-login {
+        position: fixed;
+        top: 80px;
+        bottom: 0;
+        left: 0;
+        background-color: var(--darkgrey);
+        width: 100%;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        clip-path: circle(0 at center);
+        transition: clip-path 1s ease-in-out;
+    }
+
+    .nav-input:checked + .nav-menu {
+        clip-path: circle(100% at center);
+    }
+
+    .nav-input:checked + .nav-login {
+        clip-path: circle(100% at center);
+    }
+
+    .register {
+        display: block;
+    }
 
     .cursos-container {
         perspective: none;
@@ -786,6 +877,7 @@ footer{
         border-radius: 30px;
         background-color: rgba(54, 53, 53, 0.363);
     }
+
 }
 
 @media screen and (min-width: 880px) and (max-width: 1170px) {
