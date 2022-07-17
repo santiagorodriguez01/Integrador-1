@@ -45,9 +45,13 @@ body {
 }
 
 /* Inicio Header */
+
 header{
     width: 100%;
     height: auto;
+    position: sticky;
+    z-index: 999;
+    top: 0;
 }
 
 .header-container {
@@ -59,10 +63,6 @@ header{
     justify-content: space-between;
     align-items: center;
     gap: 10px;
-
-    position: sticky;
-    z-index: 999;
-    top: 0;
 }
 
 .logo img {
@@ -100,8 +100,7 @@ header{
     -webkit-text-fill-color: transparent;
     background-size: 200% 100%;
     background-position: 100%;
-    transition: background-position 0.34s ease;
-
+    transition: background-position 0.4s ease;
 }
 
 .nav-item::after{
@@ -221,6 +220,7 @@ header{
     padding: 15px 10px;
     text-align: center;
     border-radius: 15px;
+    box-shadow: 0px 10px 20px -10px var(--aquamarine);
 
     display: flex;
     flex-direction: column;
@@ -629,29 +629,102 @@ header{
 /* Inicio Footer */
 
 footer{
-    height: 120px;
+    height: auto;
     width: 100%;
 }
 
 .footer-container {
     height: 100%;
     width: 100%;
-    padding: 20px 0;
+    padding: 10px;
     color: var(--white);
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
     text-align: center;
-    gap: 10px;
+    gap: 30px;
+}
+
+.footer-container h3 {
+    font-size: 22px;
 }
 
 .logo-footer {
     height: 40px;
 }
 
-.footer-texto>h2 {
-    font-size: 25px;
+.footer-texto {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: start;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.footer-help, .footer-info-legal {
+    width: 200px;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;        
+}
+
+.help-items {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    gap: 5px;
+}
+
+.help-items a{
+    color: var(--white);
+    font-size: 16px;
+    font-weight: 600;
+    width: 100%;
+    text-align: start;
+    --clippy: polygon(0 0, 0 0, 0 100%, 0 100%);
+
+    display: inline-block;
+    position: relative;
+    overflow: hidden;
+    background: linear-gradient(to right, #339989, #339989 50%, #FFFAFB 50%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 200% 100%;
+    background-position: 100%;
+    transition: background-position 0.4s ease;
+} 
+
+.help-items a:hover {
+    background-position: 0 100%;
+    color: var(--aquamarine);
+    transition: 0.3s;
+    --clippy: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+}
+
+.footer-info-legal p {
+    font-size: 16px;
+    text-align: left;
+}
+
+.footer-cierre {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;   
+}
+
+.footer-cierre h3 {
+        text-align: justify;
 }
 
 /* Fin Footer */
@@ -660,6 +733,10 @@ footer{
 /* MEDIA QUERIES */
 
 @media screen and (max-width: 400px) {
+
+    .nav-img {
+        height: 25px;
+    }
 
     .hero-container {
         width: 100%;
@@ -680,6 +757,18 @@ footer{
         font-size: 16px;
         padding: 0;
         width: 60%;
+    }
+
+}
+
+@media screen and (max-width: 430px) {
+    
+    .footer-texto {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        text-align: center;
     }
 
 }
@@ -772,7 +861,7 @@ footer{
 
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 790px) {
 
     .header-container {
         gap: 0;
@@ -795,6 +884,10 @@ footer{
         cursor: pointer;
     }
 
+    .nav-img {
+        height: 35px;
+    }
+
     .nav-menu, .nav-login {
         position: fixed;
         top: 80px;
@@ -802,13 +895,16 @@ footer{
         left: 0;
         background-color: var(--darkgrey);
         width: 100%;
-
+        
         display: flex;
         flex-direction: column;
-        justify-content: space-evenly;
+        justify-content: start;
         align-items: center;
+        text-align: center;
+        gap: 0;
+
         clip-path: circle(0 at center);
-        transition: clip-path 1s ease-in-out;
+        transition: clip-path .6s ease-in-out;
     }
 
     .nav-input:checked + .nav-menu {
@@ -817,6 +913,18 @@ footer{
 
     .nav-input:checked + .nav-login {
         clip-path: circle(100% at center);
+    }
+
+    .nav-item {
+        padding: 30px 0;
+        height: auto;
+        width: 100%;
+        border-top: 1px solid var(--aquamarine);
+        border-bottom: 1px solid var(--aquamarine);
+    }
+
+    .nav-item::after{
+        display: none;
     }
 
     .register {
