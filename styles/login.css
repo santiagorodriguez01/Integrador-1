@@ -48,6 +48,9 @@ body {
 header{
     width: 100%;
     height: auto;
+    position: sticky;
+    z-index: 999;
+    top: 0;
 }
 
 .header-container {
@@ -59,10 +62,6 @@ header{
     justify-content: space-between;
     align-items: center;
     gap: 10px;
-
-    position: sticky;
-    z-index: 999;
-    top: 0;
 }
 
 .logo img {
@@ -247,6 +246,10 @@ header{
     gap: 20px;
 }
 
+.container-login-form>h2 {
+    font-size: 35px;
+}
+
 .login-form {
     width: 100%;
     display: flex;
@@ -316,11 +319,6 @@ header{
     cursor: pointer;
 }
 
-.boton-lost-pass:hover {
-    color: var(--aquamarine);
-    transition: 0.4s; 
-}
-
 .boton-lost-pass {
     border: none;
     background-color: transparent;
@@ -329,6 +327,11 @@ header{
     text-align: left;
     font-weight: 400;
     cursor: pointer;
+}
+
+.boton-lost-pass:hover {
+    color: var(--aquamarine);
+    transition: 0.4s; 
 }
 
 .login-boton {
