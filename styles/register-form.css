@@ -529,7 +529,8 @@ footer{
     
     .container-register {
         width: 90%;
-        margin: 0 10px;
+        height: 90%;
+        margin: 10px 10px;
     }
 
     .register-datos {
