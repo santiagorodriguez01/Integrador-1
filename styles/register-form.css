@@ -527,6 +527,11 @@ footer{
 
 @media screen and (max-width: 550px) {
     
+    .container-register {
+        width: 90%;
+        margin: 0 10px;
+    }
+
     .register-datos {
         width: 100%;
         display: flex;
