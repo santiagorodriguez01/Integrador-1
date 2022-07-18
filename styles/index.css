@@ -138,6 +138,10 @@ header{
     gap: 10px;
 }
 
+.nav-login-item2 {
+    display: none;
+}
+
 .register {
     display: none;
 }
@@ -666,7 +670,7 @@ footer{
 }
 
 .footer-help, .footer-info-legal {
-    width: 200px;
+    width: 280px;
     height: auto;
     display: flex;
     justify-content: space-between;
@@ -676,6 +680,7 @@ footer{
 }
 
 .help-items {
+    padding: 10px;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -712,7 +717,8 @@ footer{
 
 .footer-info-legal p {
     font-size: 16px;
-    text-align: left;
+    text-align: justify;
+    padding: 10px;
 }
 
 .footer-cierre {
@@ -728,7 +734,6 @@ footer{
 }
 
 /* Fin Footer */
-
 
 /* MEDIA QUERIES */
 
@@ -927,6 +932,14 @@ footer{
         display: none;
     }
 
+    .nav-login-item1 {
+        display: none;
+    }
+
+    .nav-login-item2 {
+        display: block;
+    }
+
     .register {
         display: block;
     }
@@ -956,6 +969,7 @@ footer{
         max-height: none;
         max-width: 70%;
     }
+
 }
 
 @media screen and (max-width: 1024px) {
